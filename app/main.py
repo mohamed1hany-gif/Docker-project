@@ -5,7 +5,6 @@ import os
 
 app = FastAPI()
 
-# إعداد Redis (مع المنفذ الصحيح)
 r = redis.Redis(host="redis", port=6379)
 
 @app.get("/")
